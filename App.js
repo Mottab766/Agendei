@@ -1,20 +1,12 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import Account from "./src/componentes/Screens/account/account.jsx";
+import Login from "../agendeimob/src/componentes/Screens/Login/Login.jsx";
+import Telainicial from "./src/componentes/Screens/TelaInicial/TelaInicial.jsx";
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
+function App() {
+
+  return <>
+    <Telainicial />
+  </>;
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+export default App;
